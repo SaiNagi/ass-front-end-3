@@ -1,12 +1,34 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Posts from "./components/Posts";
 import "./App.css";
 
+function Welcome() {
+  return <h2>Welcome to the App! Click on the link to visit Posts.</h2>;
+}
+
 function App() {
   return (
-    <div className="App">
-      <h1>Posts</h1>
-      <Posts />
-    </div>
+    <Router>
+      <div className="App">
+        <h1>My App</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Welcome</Link>
+            </li>
+            <li>
+              <Link to="/posts">Posts</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/posts" element={<Posts />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
