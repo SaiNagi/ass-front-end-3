@@ -15,14 +15,17 @@ git clone https://github.com/SaiNagi/ass-front-end-3.git
 Navigate to the project directory.
 
 2. change your directory to my-app
+cd ass-front-end-3
 cd my-app
 
-3. Install dependencies.
+
+4. Install dependencies.
 npm install
 
 4.Running the App
 To run the React app locally, follow these steps:
 npm start
+
 Note: If you dont start the server, then it wont shows posts list, so start server initially.
 
 Open your web browser and go to http://localhost:3000.
