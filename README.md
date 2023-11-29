@@ -27,6 +27,12 @@ To run the React app locally, follow these steps:
 npm start
 
 Note: If you dont start the server, then it wont shows posts list, so start server initially.
+  1.Clone the repository to your local machine. git clone https://github.com/SaiNagi/ass-back-end-1.git
+  
+  2.Install dependencies. npm install
+
+  3.Running the Server node express.js
+  
 
 Open your web browser and go to http://localhost:3000.
 
